@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/times-new-roman');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @font-face {
+  font-family: 'Times New Roman';
+  src: url('src/times-new-roman/times-new-roman-bold.ttf');
+} */
+
+.nav-link.active{
+  @apply text-primary;
+}
+
+@media screen and (min-width:768px) {
+  .header:hover{
+    @apply bg-secondary border-secondary;
+  }
+
+  .header:hover .main-logo{
+    @apply hidden;
+  }
+
+  .header:hover .white-logo{
+    @apply block;
+  }
+
+  .header:hover .nav-link{
+    @apply text-white;
+  }
+
+  .header:hover .nav-link.active{
+    @apply text-primary;
+  }
+
+  .header:hover .contact-btn{
+    @apply bg-white text-secondary;
+  }
+}
+
+/* .social-icon-list li a:hover img{
+  filter: brightness(0) saturate(100%) invert(30%) sepia(42%) saturate(3145%) hue-rotate(333deg) brightness(115%) contrast(94%);
+} */
+
+.social-icon-list svg path{
+  @apply transition-all duration-300;
+}
+
+.social-icon-list li a:hover svg path{
+  @apply fill-primary;
+}

@@ -1,4 +1,6 @@
 // /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: ["*", "./pages/*html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
@@ -8,6 +10,11 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
+    },
+    fontFamily: {
+      sans: ['Times New Roman', ...defaultTheme.fontFamily.sans],
+      inter: ["Inter", ...defaultTheme.fontFamily.sans],
+      space: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
     },
     container: {
       center: true,
@@ -26,6 +33,12 @@ module.exports = {
         "2xl": "1140px"
       }
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#F8444F",
+        secondary: "#012232",
+        dark: "#012C3D"
+      },
+    },
   }
 }
