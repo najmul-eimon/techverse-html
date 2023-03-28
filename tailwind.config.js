@@ -12,9 +12,8 @@ module.exports = {
       "2xl": "1536px",
     },
     fontFamily: {
-      sans: ['Times New Roman', ...defaultTheme.fontFamily.sans],
+      sans: ['TimesNewRoman', ...defaultTheme.fontFamily.sans],
       inter: ["Inter", ...defaultTheme.fontFamily.sans],
-      space: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
     },
     container: {
       center: true,
@@ -27,7 +26,7 @@ module.exports = {
       },
       screens: {
         sm: "640px",
-        md: "640px",
+        md: "700px",
         lg: "960px",
         xl: "1140px",
         "2xl": "1140px"
@@ -37,8 +36,10 @@ module.exports = {
       colors: {
         primary: "#F8444F",
         secondary: "#012232",
-        dark: "#012C3D"
+        "primary-text": "#012C3D",
+        "secondary-text": "#456170"
       },
     },
-  }
+  },
+  plugins: [],
 }

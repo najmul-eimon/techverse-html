@@ -1,18 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/times-new-roman');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: 'Times New Roman';
-  src: url('src/times-new-roman/times-new-roman-bold.ttf');
-} */
+@font-face {
+  font-family: 'TimesNewRoman';
+  src: url('../src/times-new-roman/times-new-roman-bold.ttf');
+}
 
-.nav-link.active{
+
+/*--------------------------------------------
+header
+----------------------------------------------*/
+.header .nav-link.active{
   @apply text-primary;
+}
+
+.header .contact-btn::after{
+  content: '';
+  background-color: #203D4B;
+  @apply absolute bottom-0 left-0 h-0 w-full -z-[1] transition-all duration-300;
+}
+
+.header .contact-btn:hover::after{
+  @apply h-full;
 }
 
 @media screen and (min-width:768px) {
@@ -39,11 +51,11 @@
   .header:hover .contact-btn{
     @apply bg-white text-secondary;
   }
-}
 
-/* .social-icon-list li a:hover img{
-  filter: brightness(0) saturate(100%) invert(30%) sepia(42%) saturate(3145%) hue-rotate(333deg) brightness(115%) contrast(94%);
-} */
+  .header .contact-btn:hover{
+    @apply text-white;
+  }
+}
 
 .social-icon-list svg path{
   @apply transition-all duration-300;
@@ -51,4 +63,43 @@
 
 .social-icon-list li a:hover svg path{
   @apply fill-primary;
+}
+
+/*--------------------------------------------
+banner
+----------------------------------------------*/
+.banner{
+  background: url('../src/images/banner-bg.png') no-repeat center;
+  background-size: cover;
+}
+
+/* .circle{
+  animation: rot 10s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes rot {
+  from {
+     transform: rotate(0deg) translate(100px) rotate(0deg);
+     -webkit-transform: rotate(0deg) translate(100px) rotate(0deg);
+  }
+  to {
+     transform: rotate(360deg) translate(100px) rotate(-360deg);
+     -webkit-transform: rotate(360deg) translate(100px) rotate(-360deg);
+  }
+} */
+
+/*--------------------------------------------
+service
+----------------------------------------------*/
+.service .single-item svg path{
+  @apply transition-all duration-300;
+}
+
+.service .single-item:hover .hover-color {
+  @apply fill-primary;
+}
+
+.service .single-item:hover .more-btn svg path{
+  @apply fill-primary stroke-primary;
 }
