@@ -656,8 +656,17 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .mb-4{
@@ -684,12 +693,24 @@ video {
   margin-left: auto;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mt-4{
   margin-top: 1rem;
 }
 
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.box-border{
+  box-sizing: border-box;
 }
 
 .block{
@@ -818,6 +839,10 @@ video {
   max-width: 465px;
 }
 
+.max-w-\[523px\]{
+  max-width: 523px;
+}
+
 .flex-shrink-0{
   flex-shrink: 0;
 }
@@ -834,6 +859,10 @@ video {
   cursor: pointer;
 }
 
+.resize-none{
+  resize: none;
+}
+
 .resize{
   resize: both;
 }
@@ -844,6 +873,10 @@ video {
 
 .grid-cols-12{
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -902,6 +935,10 @@ video {
   gap: 6px;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .gap-y-3{
   row-gap: 0.75rem;
 }
@@ -940,6 +977,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -962,6 +1003,11 @@ video {
 
 .border-t{
   border-top-width: 1px;
+}
+
+.border-\[\#CDEEFE\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(205 238 254 / var(--tw-border-opacity));
 }
 
 .border-\[\#D2D1E0\]{
@@ -1041,6 +1087,10 @@ video {
   padding: 0.5rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -1082,6 +1132,11 @@ video {
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-12{
@@ -1167,6 +1222,18 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.pb-\[10px\]{
+  padding-bottom: 10px;
+}
+
+.pb-\[120px\]{
+  padding-bottom: 120px;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
+}
+
 .pt-10{
   padding-top: 2.5rem;
 }
@@ -1193,6 +1260,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .font-inter{
@@ -1608,6 +1679,12 @@ company
 contact
 ----------------------------------------------*/
 
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 .contact .address{
   background: url('../src/images/map.png') no-repeat center;
 }
@@ -1616,9 +1693,33 @@ contact
   animation: rotate 4s linear infinite;
 }
 
-@keyframes rotate {
-  100%{
-    transform: rotate(360deg);
+/*--------------------------------------------
+service-page
+----------------------------------------------*/
+
+.service-banner{
+  background: url('../src/images/service-bg.png') no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width:639px) {
+  .service-banner{
+    background: url('../src/images/service-bg-sm.png') no-repeat center;
+    background-size: cover;
+  }
+}
+
+.all-service .tabs-nav .active a{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 68 79 / var(--tw-bg-opacity));
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .all-service .tabs-nav .active a{
+    font-weight: 700;
   }
 }
 
@@ -1772,12 +1873,29 @@ contact
     margin-right: 0px;
   }
 
+  .md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .md\:mb-4{
     margin-bottom: 1rem;
   }
 
+  .md\:mb-8{
+    margin-bottom: 2rem;
+  }
+
   .md\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .md\:mt-\[77px\]{
+    margin-top: 77px;
+  }
+
+  .md\:mt-8{
+    margin-top: 2rem;
   }
 
   .md\:flex{
@@ -1844,6 +1962,10 @@ contact
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1890,6 +2012,11 @@ contact
 
   .md\:p-6{
     padding: 1.5rem;
+  }
+
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:py-0{
@@ -1942,6 +2069,10 @@ contact
 
   .md\:pb-8{
     padding-bottom: 2rem;
+  }
+
+  .md\:pb-\[105px\]{
+    padding-bottom: 105px;
   }
 
   .md\:pb-\[132px\]{
@@ -2049,6 +2180,18 @@ contact
     grid-column: span 7 / span 7;
   }
 
+  .lg\:mt-\[81px\]{
+    margin-top: 81px;
+  }
+
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
   .lg\:h-\[422px\]{
     height: 422px;
   }
@@ -2076,6 +2219,10 @@ contact
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:justify-start{
@@ -2121,9 +2268,14 @@ contact
     padding-bottom: 2.5rem;
   }
 
-  .lg\:py-7{
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+  .lg\:py-\[10px\]{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .lg\:py-\[26px\]{
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .lg\:pb-12{
@@ -2161,6 +2313,10 @@ contact
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .lg\:font-bold{
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 1280px){
@@ -2188,6 +2344,16 @@ contact
   .xl\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .xl\:leading-\[58px\]{

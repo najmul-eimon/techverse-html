@@ -188,6 +188,12 @@ company
 /*--------------------------------------------
 contact
 ----------------------------------------------*/
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 .contact .address{
   background: url('../src/images/map.png') no-repeat center;
 }
@@ -197,8 +203,21 @@ contact
 }
 
 
-@keyframes rotate {
-  100%{
-    transform: rotate(360deg);
+/*--------------------------------------------
+service-page
+----------------------------------------------*/
+.service-banner{
+  background: url('../src/images/service-bg.png') no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width:639px) {
+  .service-banner{
+    background: url('../src/images/service-bg-sm.png') no-repeat center;
+    background-size: cover;
   }
+}
+
+.all-service .tabs-nav .active a{
+  @apply font-semibold md:font-bold text-white bg-primary;
 }

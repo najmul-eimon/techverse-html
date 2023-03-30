@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techverse | Service</title>
+  <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="../src/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+  <!-- header start -->
+  <header class="header fixed top-0 left-0 w-full z-40 bg-[#FAFAFC] shadow-[0px_0px_22px_rgba(119,119,119,0.19)] box-border md:shadow-none md:border-b md:border-black/10 transition-all duration-300">
+    <div class="container">
+      <div class="grid grid-cols-12 items-center py-2 md:py-0">
+        <div class="col-span-6 md:col-span-2">
+          <a href="../index.html">
+            <img src="../src/images/logo.svg" class="main-logo" alt="Logo">
+            <img src="../src/images/logo-white.svg" class="white-logo hidden" alt="Logo">
+          </a>
+        </div>
+        <div class="col-span-6 md:col-span-10">
+          <button type="button" class="mobile-menu-toggle ml-auto h-6 w-6 rounded-full bg-[#F0F0F1] flex items-center justify-center md:hidden"><i class="ph ph-list text-secondary"></i></button>
+          
+          <div class="mobile-menu fixed top-[72px] left-0 md:static bg-white md:bg-transparent rounded md:rounded-none border border-[#D2D1E0] shadow-[4px_20px_23px_rgba(71,71,71,0.13)] md:shadow-none md:border-0 py-12 px-6 md:p-0 w-[calc(100%-48px)] md:w-auto mx-6 md:mx-0 hidden md:flex items-center justify-between md:pl-6">
+            <ul class="w-full md:w-auto flex flex-col md:flex-row md:items-center gap-6">
+              <li>
+                <a href="../index.html" class="nav-link w-full md:w-auto border-b border-black/20 md:border-0 font-bold inline-block text-primary-text py-2 px-3 lg:px-5 text-base capitalize transition-all duration-300">Home</a>
+              </li>
+              <li>
+                <a href="service.html" class="nav-link w-full md:w-auto border-b border-black/20 md:border-0 font-bold inline-block text-primary-text py-2 px-3 lg:px-5 text-base capitalize transition-all duration-300 active">Service</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link w-full md:w-auto border-b border-black/20 md:border-0 font-bold inline-block text-primary-text py-2 px-3 lg:px-5 text-base capitalize transition-all duration-300">Testimonial</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link w-full md:w-auto border-b border-black/20 md:border-0 font-bold inline-block text-primary-text py-2 px-3 lg:px-5 text-base capitalize transition-all duration-300">Blog</a>
+              </li>
+            </ul>
+
+            <a href="#!" class="contact-btn relative z-10 hidden md:flex w-fit items-center gap-[10px] py-6 lg:py-[26px] px-7 lg:px-8 text-white text-base bg-secondary font-bold transition-all duration-300">Contacts <i class="ph ph-arrow-up-right text-lg arrow-icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main class="mt-12 md:mt-[77px] lg:mt-[81px]">
+    <!-- banner start -->
+    <section class="service-banner pt-8 md:pt-20 pb-[120px] md:pb-[105px]">
+      <div class="container">
+        <div class="max-w-[523px]">
+          <h1 class="text-2xl md:text-4xl xl:text-5xl font-bold text-primary-text pb-2">Service</h1>
+          <p class="text-primary-text font-inter text-xs md:text-base">Excepteur sint occaecat cupidatat non proident, sunt in coulpa qui official modeserunt mollit anim id est laborum 20 years experience.</p>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- all-service start -->
+    <section class="all-service pt-10 pb-8 md:py-20">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- left side -->
+          <div>
+            <!-- card 1 -->
+            <div class="rounded-2xl bg-white shadow-[0px_0px_16px_rgba(198,198,198,0.24)] p-4">
+              <h3 class="text-center py-3 text-lg xl:text-2xl text-primary-text">All Service</h3>
+              <ul class="tabs-nav">
+                <li><a href="#tab1" class="block px-4 py-3 rounded-lg text-sm xl:text-base font-inter text-primary-text">UI/UX designer</a></li>
+                <li><a href="#tab2" class="block px-4 py-3 rounded-lg text-sm xl:text-base font-inter text-primary-text">Web development</a></li>
+                <li><a href="#tab3" class="block px-4 py-3 rounded-lg text-sm xl:text-base font-inter text-primary-text">Digital marketing</a></li>
+                <li><a href="#tab4" class="block px-4 py-3 rounded-lg text-sm xl:text-base font-inter text-primary-text">Server Security</a></li>
+                <li><a href="#tab5" class="block px-4 py-3 rounded-lg text-sm xl:text-base font-inter text-primary-text">Database Analysis</a></li>
+                <li><a href="#tab6" class="block px-4 py-3 rounded-lg text-sm xl:text-base font-inter text-primary-text">AI & machine learning</a></li>
+              </ul>
+            </div>
+
+            <!-- desktop book appointment-->
+            <div class="bg-white rounded-2xl px-4 md:px-8 py-10 shadow-[0px_0px_16px_rgba(198,198,198,0.24)] mt-8 hidden lg:block">
+              <h3 class="pb-4 text-primary-text text-lg xl:text-2xl font-bold text-center">Book an <br> Appointment</h3>
+              <form action="#!">
+                <div class="mb-4">
+                  <label for="name" class="text-sm xl:text-base font-medium lg:font-bold font-inter text-primary-text block mb-3">Name</label>
+                  <input type="text" id="name" class="w-full h-12 rounded-lg border border-[#D2D1E0] text-base font-inter text-primary-text outline-none px-3">
+                </div>
+
+                <div class="mb-4">
+                  <label for="email" class="text-sm xl:text-base font-medium lg:font-bold font-inter text-primary-text block mb-3">Email</label>
+                  <input type="email" id="email" class="w-full h-12 rounded-lg border border-[#D2D1E0] text-base font-inter text-primary-text outline-none px-3">
+                </div>
+
+                <div class="mb-4">
+                  <label for="message" class="text-sm xl:text-base font-medium lg:font-bold font-inter text-primary-text block mb-3">Message</label>
+                  <textarea id="message" class="w-full resize-none h-24 rounded-lg border border-[#D2D1E0] text-base font-inter text-primary-text outline-none p-3"></textarea>
+                </div>
+
+                <button type="submit" class="rounded-lg bg-primary text-white py-2 lg:py-[10px] text-sm xl:text-lg font-semibold font-inter text-center w-full">Contact with us now</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- right side -->
+          <div class="md:col-span-2">
+            <!-- tab 1 -->
+            <div id="tab1" class="tab-content">
+              <div class="rounded-lg md:rounded-xl overflow-hidden h-full mb-6 md:mb-8">
+                <img src="../src/images/service/ui.png" class="w-full" alt="Service">
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">UI/UX Design</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 md:my-8">
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">Why choosing us</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">What we Offer</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Analyzing UI/UX Design Service</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+
+              <div class="mt-6 md:mt-8">
+                <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">UI/UX Design Service</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- tab 2 -->
+            <div id="tab2" class="tab-content">
+              <div class="rounded-lg md:rounded-xl overflow-hidden h-full mb-6 md:mb-8">
+                <img src="../src/images/service/web.png" class="w-full" alt="Service">
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Web development</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 md:my-8">
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">Why choosing us</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">What we Offer</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Analyzing Web development Service</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+
+              <div class="mt-6 md:mt-8">
+                <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Web development Service</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- tab 3 -->
+            <div id="tab3" class="tab-content">
+              <div class="rounded-lg md:rounded-xl overflow-hidden h-full mb-6 md:mb-8">
+                <img src="../src/images/service/digital.png" class="w-full" alt="Service">
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Digital marketing</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 md:my-8">
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">Why choosing us</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">What we Offer</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Analyzing Digital marketing Service</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+
+              <div class="mt-6 md:mt-8">
+                <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Digital marketing Service</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- tab 4 -->
+            <div id="tab4" class="tab-content">
+              <div class="rounded-lg md:rounded-xl overflow-hidden h-full mb-6 md:mb-8">
+                <img src="../src/images/service/server.png" class="w-full" alt="Service">
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Server Security</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 md:my-8">
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">Why choosing us</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">What we Offer</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Analyzing Server Security Service</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+
+              <div class="mt-6 md:mt-8">
+                <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Server Security Service</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- tab 5 -->
+            <div id="tab5" class="tab-content">
+              <div class="rounded-lg md:rounded-xl overflow-hidden h-full mb-6 md:mb-8">
+                <img src="../src/images/service/data.png" class="w-full" alt="Service">
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Database Analysis</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 md:my-8">
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">Why choosing us</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">What we Offer</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Analyzing Database Analysis Service</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+
+              <div class="mt-6 md:mt-8">
+                <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Database Analysis Service</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- tab 6 -->
+            <div id="tab6" class="tab-content">
+              <div class="rounded-lg md:rounded-xl overflow-hidden h-full mb-6 md:mb-8">
+                <img src="../src/images/service/ai.png" class="w-full" alt="Service">
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">AI & machine learning</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6 md:my-8">
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">Why choosing us</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+                <div class="rounded-2xl p-4 border border-[#CDEEFE]">
+                  <h3 class="pb-[10px] text-center text-primary-text text-lg xl:text-2xl font-bold">What we Offer</h3>
+                  <p class="text-xs md:text-base font-inter text-secondary-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking. Lorem ipsum dolor sitquia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+                </div>
+              </div>
+
+              <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">Analyzing AI & machine learning Service</h3>
+              <p class="text-xs md:text-base font-inter text-secondary-text text-justify">It fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illoinventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sitaspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nequeporro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore.</p>
+
+              <div class="mt-6 md:mt-8">
+                <h3 class="pb-2 text-primary-text text-lg xl:text-2xl font-bold">AI & machine learning Service</h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                  <li class="flex items-start gap-4">
+                    <img src="../src/images/icons/verify-red.svg" class="pt-1" alt="verify">
+                    <p class="text-xs md:text-base font-inter text-secondary-text">nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- responsive book appointment -->
+          <div class="bg-white rounded-2xl px-4 md:px-8 py-10 shadow-[0px_0px_16px_rgba(198,198,198,0.24)] mt-8 lg:hidden">
+            <h3 class="pb-4 text-primary-text text-lg xl:text-2xl font-bold text-center">Book an <br> Appointment</h3>
+            <form action="#!">
+              <div class="mb-4">
+                <label for="name" class="text-sm xl:text-base font-medium lg:font-bold font-inter text-primary-text block mb-3">Name</label>
+                <input type="text" id="name" class="w-full h-12 rounded-lg border border-[#D2D1E0] text-base font-inter text-primary-text outline-none px-3">
+              </div>
+
+              <div class="mb-4">
+                <label for="email" class="text-sm xl:text-base font-medium lg:font-bold font-inter text-primary-text block mb-3">Email</label>
+                <input type="email" id="email" class="w-full h-12 rounded-lg border border-[#D2D1E0] text-base font-inter text-primary-text outline-none px-3">
+              </div>
+
+              <div class="mb-4">
+                <label for="message" class="text-sm xl:text-base font-medium lg:font-bold font-inter text-primary-text block mb-3">Message</label>
+                <textarea id="message" class="w-full resize-none h-24 rounded-lg border border-[#D2D1E0] text-base font-inter text-primary-text outline-none p-3"></textarea>
+              </div>
+
+              <button type="submit" class="rounded-lg bg-primary text-white py-2 lg:py-[10px] text-sm xl:text-lg font-semibold font-inter text-center w-full">Contact with us now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- all-service end -->
+
+    <!-- working-process start -->
+    <section class="working-process py-8 md:py-20">
+      <div class="container">
+        <!-- section title -->
+        <div class="text-center pb-6 md:pb-8">
+          <span class="text-xs md:text-base font-semibold md:font-bold font-inter text-primary block">Working Process</span>
+          <h2 class="text-primary-text pt-2 font-bold text-lg md:text-2xl lg:text-[32px] md:leading-10">Robust and effective process.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+          <!-- item 1 -->
+          <div class="p-6 text-center">
+            <div class="h-12 md:h-[72px] w-12 md:w-[72px] flex items-center justify-center rounded-lg bg-[#F0F0F1] mx-auto">
+              <svg class="h-[26px] md:h-[41px] w-[26px] md:w-[41px]" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.2569 25.9883C23.1426 25.5261 22.0616 24.9154 21.0305 24.189C19.9994 23.4627 18.1503 21.6712 16.9709 20.2611C15.9082 18.891 15.0268 17.4054 14.4098 15.8867C14.1625 15.2246 14.8505 14.1846 15.374 13.3933C15.5161 13.1785 15.646 12.982 15.7419 12.8164L15.7706 12.766C16.196 12.0198 16.6681 11.1915 16.4404 10.1422C16.2408 9.16826 13.5633 5.88333 12.6319 4.97543C12.0166 4.38117 11.3846 4.06753 10.7693 4.00151C8.29129 3.91897 5.48068 7.25343 5.13143 7.86419C4.54936 8.67305 4.25 9.61396 4.25 10.6704C4.25 11.7434 4.54936 12.9484 5.1647 14.2525C6.4619 17.3393 9.22262 21.1525 12.4989 24.7015C13.1333 25.4329 15.3627 27.6225 16.5236 28.6625C19.7666 31.5678 23.126 33.9613 25.9366 35.1003C28.5643 36.2888 30.7429 36.3053 32.3727 35.1168C33.1378 34.6546 36.3475 31.9639 36.2477 29.5704C36.1978 28.9266 35.8652 28.2993 35.2665 27.7051C34.3518 26.7807 31.0423 24.1725 30.0777 23.9745C29.004 23.7484 28.169 24.2173 27.4171 24.6396L27.3669 24.6678C27.2139 24.7569 27.0323 24.8757 26.8328 25.0063C26.0345 25.5287 24.9488 26.2393 24.2569 25.9883Z" fill="#F8444F"/>
+                <path d="M33.5833 21.3333C34.3197 21.3333 34.9167 20.7364 34.9167 20C34.9167 15.697 33.4765 12.0076 30.8595 9.39052C28.2424 6.77349 24.553 5.33333 20.25 5.33333C19.5136 5.33333 18.9167 5.93029 18.9167 6.66667C18.9167 7.40305 19.5136 8 20.25 8C23.947 8 26.9242 9.22651 28.9739 11.2761C31.0235 13.3258 32.25 16.303 32.25 20C32.25 20.7364 32.847 21.3333 33.5833 21.3333Z" fill="#F8444F"/>
+                <path d="M28.25 21.3333C28.9864 21.3333 29.5833 20.7364 29.5833 20C29.5833 14.597 25.653 10.6667 20.25 10.6667C19.5136 10.6667 18.9167 11.2636 18.9167 12C18.9167 12.7364 19.5136 13.3333 20.25 13.3333C24.1803 13.3333 26.9167 16.0697 26.9167 20C26.9167 20.7364 27.5136 21.3333 28.25 21.3333Z" fill="#F8444F"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-sm md:text-base text-primary-text pt-4 md:pt-6 pb-2">Contact</h3>
+            <p class="font-inter text-secondary-text text-xs md:text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+          <!-- item 2 -->
+          <div class="p-6 text-center">
+            <div class="h-12 md:h-[72px] w-12 md:w-[72px] flex items-center justify-center rounded-lg bg-[#F0F0F1] mx-auto">
+              <svg class="h-[26px] md:h-[40px] w-[26px] md:w-[38px]" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.616 1.53846C23.616 0.688793 24.3048 0 25.1544 0C26.0041 0 26.6929 0.688793 26.6929 1.53846V7.69231C26.6929 8.54198 26.0041 9.23077 25.1544 9.23077C24.3048 9.23077 23.616 8.54198 23.616 7.69231V1.53846Z" fill="#F8444F"/>
+                <path d="M22.0775 3.12992C21.1107 3.09353 20.0861 3.07692 19.0006 3.07692C17.9151 3.07692 16.8905 3.09353 15.9237 3.12992V7.69231C15.9237 9.39165 14.5461 10.7692 12.8468 10.7692C11.1474 10.7692 9.76983 9.39165 9.76983 7.69231V3.80869C4.37337 4.9888 1.93513 7.80311 1.013 13.6937C0.872075 14.594 1.58894 15.3846 2.50016 15.3846H35.501C36.4123 15.3846 37.1291 14.594 36.9882 13.6937C36.0661 7.80312 33.6278 4.9888 28.2314 3.80869V7.69231C28.2314 9.39165 26.8538 10.7692 25.1544 10.7692C23.4551 10.7692 22.0775 9.39165 22.0775 7.69231V3.12992Z" fill="#F8444F"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.0006 40C3.79752 40 0.539062 36.7415 0.539062 21.5385C0.539062 20.9912 0.543285 20.4594 0.552136 19.9426C0.566301 19.1156 1.24656 18.4615 2.07371 18.4615H35.9275C36.7546 18.4615 37.4349 19.1156 37.4491 19.9426C37.4579 20.4594 37.4621 20.9912 37.4621 21.5385C37.4621 36.7415 34.2037 40 19.0006 40ZM8.23137 24.6154C8.23137 23.7657 8.92016 23.0769 9.76983 23.0769H14.3852C15.2349 23.0769 15.9237 23.7657 15.9237 24.6154C15.9237 25.4651 15.2349 26.1538 14.3852 26.1538H9.76983C8.92016 26.1538 8.23137 25.4651 8.23137 24.6154ZM9.76983 29.2308C8.92016 29.2308 8.23137 29.9196 8.23137 30.7692C8.23137 31.6189 8.92016 32.3077 9.76983 32.3077H14.3852C15.2349 32.3077 15.9237 31.6189 15.9237 30.7692C15.9237 29.9196 15.2349 29.2308 14.3852 29.2308H9.76983ZM28.0513 23.5341C28.6521 22.9333 29.6262 22.9333 30.2271 23.5341C30.8279 24.1349 30.8279 25.109 30.2271 25.7098L24.0174 31.9195C23.7007 32.2361 23.2804 32.3859 22.8656 32.3687C22.4863 32.3582 22.1102 32.2082 21.8207 31.9187L19.645 29.743C19.0442 29.1422 19.0442 28.1681 19.645 27.5673C20.2458 26.9665 21.2199 26.9665 21.8207 27.5673L22.9194 28.666L28.0513 23.5341Z" fill="#F8444F"/>
+                <path d="M11.3083 1.53846C11.3083 0.688793 11.9971 0 12.8468 0C13.6964 0 14.3852 0.688793 14.3852 1.53846V7.69231C14.3852 8.54198 13.6964 9.23077 12.8468 9.23077C11.9971 9.23077 11.3083 8.54198 11.3083 7.69231V1.53846Z" fill="#F8444F"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-sm md:text-base text-primary-text pt-4 md:pt-6 pb-2">Appointment</h3>
+            <p class="font-inter text-secondary-text text-xs md:text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+          <!-- item 3 -->
+          <div class="p-6 text-center">
+            <div class="h-12 md:h-[72px] w-12 md:w-[72px] flex items-center justify-center rounded-lg bg-[#F0F0F1] mx-auto">
+              <svg class="h-[26px] md:h-[37px] w-[26px] md:w-[38px]" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.765 0H11.4017C4.72833 0 0.75 3.97833 0.75 10.6517V25.9967C0.75 32.6883 4.72833 36.6667 11.4017 36.6667H26.7467C33.42 36.6667 37.3983 32.6883 37.3983 26.015V10.6517C37.4167 3.97833 33.4383 0 26.765 0ZM32.5583 12.54C32.485 12.705 32.3933 12.8517 32.265 12.98L28.965 16.28C28.69 16.555 28.3417 16.6833 27.9933 16.6833C27.645 16.6833 27.2967 16.555 27.0217 16.28C26.49 15.7483 26.49 14.8683 27.0217 14.3367L27.975 13.3833H27.7C23.85 13.3833 20.6967 16.5183 20.6967 20.3683V23.9617V27.94C20.6967 28.6917 20.0733 29.315 19.3217 29.315C18.57 29.315 17.9467 28.6917 17.9467 27.94V23.9617V20.3683C17.9467 16.5183 14.8117 13.3833 10.9617 13.3833H10.1917L11.145 14.3367C11.6767 14.8683 11.6767 15.7483 11.145 16.28C10.87 16.555 10.5217 16.6833 10.1733 16.6833C9.825 16.6833 9.47667 16.555 9.20167 16.28L5.90167 12.98C5.37 12.4483 5.37 11.5683 5.90167 11.0367L9.20167 7.73667C9.73333 7.205 10.6133 7.205 11.145 7.73667C11.6767 8.26833 11.6767 9.14833 11.145 9.68L10.1917 10.6333H10.98C14.555 10.6333 17.6533 12.595 19.34 15.4733C21.0267 12.595 24.125 10.6333 27.7183 10.6333H27.9933L27.04 9.68C26.5083 9.14833 26.5083 8.26833 27.04 7.73667C27.5717 7.205 28.4517 7.205 28.9833 7.73667L32.2833 11.0367C32.4117 11.165 32.5033 11.3117 32.5767 11.4767C32.705 11.825 32.705 12.21 32.5583 12.54Z" fill="#F8444F"/>
+              </svg>                
+            </div>
+            <h3 class="font-bold text-sm md:text-base text-primary-text pt-4 md:pt-6 pb-2">Roadmap Planning</h3>
+            <p class="font-inter text-secondary-text text-xs md:text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+
+          <!-- item 4 -->
+          <div class="p-6 text-center">
+            <div class="h-12 md:h-[72px] w-12 md:w-[72px] flex items-center justify-center rounded-lg bg-[#F0F0F1] mx-auto">
+              <svg class="h-[26px] md:h-[40px] w-[26px] md:w-[41px]" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.333 3.35319V36.6653L25.7497 36.6654C30.4637 36.6654 32.8207 36.6654 34.2852 35.2009C35.7497 33.7364 35.7497 31.3794 35.7497 26.6654V13.332C35.7497 8.61799 35.7497 6.26096 34.2852 4.7965C32.8207 3.33203 30.4637 3.33203 25.7497 3.33203H15.7497L15.333 3.35319ZM18.6663 10.832C18.6663 10.1417 19.226 9.58203 19.9163 9.58203H28.2497C28.94 9.58203 29.4997 10.1417 29.4997 10.832C29.4997 11.5224 28.94 12.082 28.2497 12.082H19.9163C19.226 12.082 18.6663 11.5224 18.6663 10.832ZM18.6663 16.6654C18.6663 15.975 19.226 15.4154 19.9163 15.4154H28.2497C28.94 15.4154 29.4997 15.975 29.4997 16.6654C29.4997 17.3557 28.94 17.9154 28.2497 17.9154H19.9163C19.226 17.9154 18.6663 17.3557 18.6663 16.6654ZM5.75084 12.082C5.76223 8.18915 5.88527 6.12536 7.21414 4.7965C8.33912 3.67152 9.99079 3.41073 12.833 3.35028V36.6471C9.99079 36.5867 8.33912 36.3259 7.21414 35.2009C5.88527 33.872 5.76223 31.8082 5.75084 27.9154H7.41634C8.1067 27.9154 8.66634 27.3557 8.66634 26.6654C8.66634 25.975 8.1067 25.4154 7.41634 25.4154H5.74967V21.2487H7.41634C8.1067 21.2487 8.66634 20.6891 8.66634 19.9987C8.66634 19.3083 8.1067 18.7487 7.41634 18.7487H5.74967V14.582H7.41634C8.1067 14.582 8.66634 14.0224 8.66634 13.332C8.66634 12.6417 8.1067 12.082 7.41634 12.082H5.75084ZM5.75084 12.082H4.08301C3.39265 12.082 2.83301 12.6417 2.83301 13.332C2.83301 14.0224 3.39265 14.582 4.08301 14.582H5.74967V13.332C5.74967 12.8955 5.74967 12.4793 5.75084 12.082ZM5.74967 21.2487H4.08301C3.39265 21.2487 2.83301 20.6891 2.83301 19.9987C2.83301 19.3083 3.39265 18.7487 4.08301 18.7487H5.74967V21.2487ZM5.74967 25.4154H4.08301C3.39265 25.4154 2.83301 25.975 2.83301 26.6654C2.83301 27.3557 3.39265 27.9154 4.08301 27.9154H5.75084C5.74967 27.5181 5.74967 27.1019 5.74967 26.6654V25.4154Z" fill="#F8444F"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-sm md:text-base text-primary-text pt-4 md:pt-6 pb-2">Info Collect</h3>
+            <p class="font-inter text-secondary-text text-xs md:text-sm">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+        </div>
+
+        <!-- progress bar -->
+        <svg class="mt-6 w-full hidden md:flex" height="40" viewBox="0 0 1116 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0_1647_95634" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="123" y="0" width="870" height="15">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M130.5 15C134.474 15 137.726 11.909 137.984 8L408.016 8.00002C408.274 11.909 411.526 15 415.5 15C419.474 15 422.726 11.909 422.984 8.00003L693.016 8.00005C693.274 11.909 696.526 15 700.5 15C704.474 15 707.726 11.909 707.984 8.00005L978.016 8.00007C978.274 11.9091 981.526 15 985.5 15C989.642 15 993 11.6421 993 7.5C993 3.35786 989.642 0 985.5 0C981.526 0 978.274 3.09102 978.016 7.00007L707.984 7.00005C707.726 3.09101 704.474 0 700.5 0C696.526 0 693.274 3.09101 693.016 7.00005L422.984 7.00003C422.726 3.091 419.474 0 415.5 0C411.526 0 408.274 3.091 408.016 7.00002L137.984 7C137.726 3.09098 134.474 0 130.5 0C126.358 0 123 3.35786 123 7.5C123 11.6421 126.358 15 130.5 15Z" fill="#E6F6FF"/>
+          </mask>
+          <g class="progress-svg" mask="url(#mask0_1647_95634)">
+          <rect x="121" width="874" height="25" fill="#D9D9D9"/>
+          <rect class="progress-svg" width="874" x="121" height="25" fill="#012C3D"/>
+          </g>
+        </svg>          
+      </div>
+    </section>
+    <!-- working-process end -->
+  </main>
+  <!-- main end -->
+
+  <!-- footer start -->
+  <footer class="bg-[#001824]">
+
+    <!-- footer-top start -->
+    <section class="footer-top py-[72px]">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-y-8 lg:gap-0">
+          <div class="col-span-12 lg:col-span-5">
+            <a href="../index.html" class="flex items-center sm:justify-center lg:justify-start">
+              <img src="../src/images/logo-white.svg" alt="Logo">
+            </a>
+            <p class="text-xs sm:text-sm font-inter sm:text-center lg:text-left leading-[18px] sm:leading-[22px] text-white/80 pt-8 pb-4 lg:pb-12 lg:max-w-[356px]">Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt.</p>
+            <ul class="flex items-center sm:justify-center lg:justify-start gap-4 social-icon-list w-full">
+              <li>
+                <a href="#!">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.1252 9.99862C18.1212 11.9837 17.3927 13.899 16.0764 15.385C14.7602 16.8709 12.9468 17.8253 10.9768 18.0689C10.9328 18.0733 10.8884 18.0684 10.8464 18.0548C10.8044 18.0411 10.7657 18.0189 10.7326 17.9896C10.6996 17.9602 10.673 17.9244 10.6545 17.8842C10.6361 17.8441 10.6261 17.8006 10.6252 17.7564V11.8736H12.5002C12.5857 11.8738 12.6703 11.8564 12.7488 11.8226C12.8272 11.7888 12.898 11.7392 12.9565 11.677C13.0151 11.6147 13.0603 11.5411 13.0893 11.4608C13.1183 11.3804 13.1305 11.2949 13.1252 11.2096C13.1114 11.0479 13.0368 10.8976 12.9164 10.7889C12.7961 10.6801 12.6389 10.6211 12.4768 10.6236H10.6252V8.74862C10.6252 8.4171 10.7569 8.09916 10.9913 7.86474C11.2257 7.63032 11.5437 7.49862 11.8752 7.49862H13.1252C13.2107 7.49879 13.2953 7.48143 13.3738 7.4476C13.4522 7.41378 13.523 7.36422 13.5815 7.30198C13.6401 7.23974 13.6853 7.16615 13.7143 7.08575C13.7433 7.00536 13.7555 6.91986 13.7502 6.83456C13.7364 6.67295 13.6618 6.5226 13.5414 6.41385C13.4211 6.3051 13.2639 6.24606 13.1018 6.24862H11.8752C11.2122 6.24862 10.5763 6.51202 10.1074 6.98086C9.63859 7.4497 9.3752 8.08558 9.3752 8.74862V10.6236H7.5002C7.41473 10.6235 7.33013 10.6408 7.25164 10.6746C7.17315 10.7085 7.10243 10.758 7.04385 10.8203C6.98527 10.8825 6.94009 10.9561 6.91108 11.0365C6.88207 11.1169 6.86986 11.2024 6.8752 11.2877C6.88903 11.4493 6.96364 11.5996 7.08399 11.7084C7.20434 11.8171 7.36146 11.8762 7.52364 11.8736H9.3752V17.7564C9.37542 17.8002 9.36643 17.8436 9.34881 17.8837C9.33118 17.9238 9.30533 17.9598 9.27291 17.9892C9.2405 18.0187 9.20225 18.041 9.16065 18.0548C9.11906 18.0685 9.07504 18.0733 9.03145 18.0689C4.90645 17.5689 1.71895 13.983 1.88301 9.69394C1.97511 7.5758 2.89149 5.57756 4.43655 4.12574C5.98162 2.67392 8.03297 1.88354 10.1527 1.92331C12.2725 1.96307 14.2928 2.82983 15.7823 4.33857C17.2718 5.84732 18.1126 7.87852 18.1252 9.99862Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.196 6.07039L16.8366 8.42195C16.3679 13.8829 11.7585 18.1251 6.2507 18.1251C5.11788 18.1251 4.18038 17.9454 3.46945 17.5938C2.89913 17.3048 2.66476 17.0001 2.60226 16.9063C2.55055 16.8278 2.51723 16.7386 2.50478 16.6454C2.49233 16.5522 2.50107 16.4573 2.53036 16.368C2.55964 16.2786 2.60872 16.197 2.67392 16.1293C2.73912 16.0615 2.81878 16.0093 2.90695 15.9766C2.92257 15.9688 4.76632 15.2657 5.96163 13.9141C5.22034 13.3863 4.56878 12.7427 4.03195 12.0079C2.96163 10.5548 1.82882 8.03132 2.50851 4.2657C2.52988 4.15375 2.58108 4.04965 2.65671 3.96439C2.73234 3.87913 2.82959 3.81589 2.9382 3.78132C3.04714 3.74565 3.16381 3.74063 3.27542 3.76681C3.38703 3.79299 3.48929 3.84936 3.57101 3.92976C3.59445 3.96101 6.19601 6.52351 9.3757 7.35164V6.87507C9.37876 6.37954 9.47941 5.88945 9.67188 5.43281C9.86436 4.97617 10.1449 4.56191 10.4975 4.21369C10.85 3.86547 11.2677 3.59011 11.7267 3.40332C12.1857 3.21653 12.677 3.12199 13.1726 3.12507C13.823 3.13435 14.4598 3.31193 15.0212 3.64053C15.5825 3.96912 16.0492 4.43751 16.3757 5.00007H18.7507C18.8741 4.99969 18.9948 5.03583 19.0977 5.10396C19.2006 5.17208 19.281 5.26913 19.3288 5.38289C19.3738 5.49833 19.3853 5.62416 19.3618 5.74583C19.3383 5.86749 19.2808 5.98002 19.196 6.07039Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" fill="white"/>
+                    <path d="M13.4375 2.1875H6.5625C5.40218 2.1875 4.28938 2.64844 3.46891 3.46891C2.64844 4.28938 2.1875 5.40218 2.1875 6.5625V13.4375C2.1875 14.5978 2.64844 15.7106 3.46891 16.5311C4.28938 17.3516 5.40218 17.8125 6.5625 17.8125H13.4375C14.5978 17.8125 15.7106 17.3516 16.5311 16.5311C17.3516 15.7106 17.8125 14.5978 17.8125 13.4375V6.5625C17.8125 5.40218 17.3516 4.28938 16.5311 3.46891C15.7106 2.64844 14.5978 2.1875 13.4375 2.1875ZM10 13.75C9.25832 13.75 8.5333 13.5301 7.91661 13.118C7.29993 12.706 6.81928 12.1203 6.53545 11.4351C6.25162 10.7498 6.17736 9.99584 6.32206 9.26841C6.46675 8.54098 6.8239 7.8728 7.34835 7.34835C7.8728 6.8239 8.54098 6.46675 9.26841 6.32206C9.99584 6.17736 10.7498 6.25162 11.4351 6.53545C12.1203 6.81928 12.706 7.29993 13.118 7.91661C13.5301 8.5333 13.75 9.25832 13.75 10C13.75 10.9946 13.3549 11.9484 12.6517 12.6517C11.9484 13.3549 10.9946 13.75 10 13.75ZM14.0625 6.875C13.8771 6.875 13.6958 6.82002 13.5417 6.717C13.3875 6.61399 13.2673 6.46757 13.1964 6.29627C13.1254 6.12496 13.1068 5.93646 13.143 5.7546C13.1792 5.57275 13.2685 5.4057 13.3996 5.27459C13.5307 5.14348 13.6977 5.05419 13.8796 5.01801C14.0615 4.98184 14.25 5.00041 14.4213 5.07136C14.5926 5.14232 14.739 5.26248 14.842 5.41665C14.945 5.57082 15 5.75208 15 5.9375C15 6.18614 14.9012 6.4246 14.7254 6.60041C14.5496 6.77623 14.3111 6.875 14.0625 6.875Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5625 2.1875H3.4375C3.10598 2.1875 2.78804 2.3192 2.55362 2.55362C2.3192 2.78804 2.1875 3.10598 2.1875 3.4375V16.5625C2.1875 16.894 2.3192 17.212 2.55362 17.4464C2.78804 17.6808 3.10598 17.8125 3.4375 17.8125H16.5625C16.894 17.8125 17.212 17.6808 17.4464 17.4464C17.6808 17.212 17.8125 16.894 17.8125 16.5625V3.4375C17.8125 3.10598 17.6808 2.78804 17.4464 2.55362C17.212 2.3192 16.894 2.1875 16.5625 2.1875ZM7.5 13.75C7.5 13.9158 7.43415 14.0747 7.31694 14.1919C7.19973 14.3092 7.04076 14.375 6.875 14.375C6.70924 14.375 6.55027 14.3092 6.43306 14.1919C6.31585 14.0747 6.25 13.9158 6.25 13.75V8.75C6.25 8.58424 6.31585 8.42527 6.43306 8.30806C6.55027 8.19085 6.70924 8.125 6.875 8.125C7.04076 8.125 7.19973 8.19085 7.31694 8.30806C7.43415 8.42527 7.5 8.58424 7.5 8.75V13.75ZM6.875 7.1875C6.68958 7.1875 6.50832 7.13252 6.35415 7.0295C6.19998 6.92649 6.07982 6.78007 6.00886 6.60877C5.93791 6.43746 5.91934 6.24896 5.95551 6.0671C5.99169 5.88525 6.08098 5.7182 6.21209 5.58709C6.3432 5.45598 6.51025 5.36669 6.6921 5.33051C6.87396 5.29434 7.06246 5.31291 7.23377 5.38386C7.40507 5.45482 7.55149 5.57498 7.6545 5.72915C7.75752 5.88332 7.8125 6.06458 7.8125 6.25C7.8125 6.49864 7.71373 6.7371 7.53791 6.91291C7.3621 7.08873 7.12364 7.1875 6.875 7.1875ZM14.375 13.75C14.375 13.9158 14.3092 14.0747 14.1919 14.1919C14.0747 14.3092 13.9158 14.375 13.75 14.375C13.5842 14.375 13.4253 14.3092 13.3081 14.1919C13.1908 14.0747 13.125 13.9158 13.125 13.75V10.9375C13.125 10.5231 12.9604 10.1257 12.6674 9.83265C12.3743 9.53962 11.9769 9.375 11.5625 9.375C11.1481 9.375 10.7507 9.53962 10.4576 9.83265C10.1646 10.1257 10 10.5231 10 10.9375V13.75C10 13.9158 9.93415 14.0747 9.81694 14.1919C9.69973 14.3092 9.54076 14.375 9.375 14.375C9.20924 14.375 9.05027 14.3092 8.93306 14.1919C8.81585 14.0747 8.75 13.9158 8.75 13.75V8.75C8.74957 8.59619 8.80587 8.44762 8.90813 8.33272C9.01039 8.21782 9.15143 8.14467 9.30425 8.12726C9.45708 8.10985 9.61096 8.1494 9.73644 8.23835C9.86192 8.32731 9.9502 8.45941 9.98438 8.60937C10.4073 8.3227 10.9003 8.15663 11.4105 8.12901C11.9206 8.10139 12.4287 8.21326 12.8801 8.4526C13.3314 8.69195 13.7091 9.04973 13.9725 9.48752C14.2359 9.92532 14.375 10.4266 14.375 10.9375V13.75Z" fill="white"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+            <h3 class="pb-6 text-white text-sm sm:text-base font-bold font-inter">Menu</h3>
+            <ul class="space-y-6">
+              <li>
+                <a href="#!" class="text-white text-xs sm:text-sm font-inter transition-all duration-300 hover:text-primary">Services</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-xs sm:text-sm font-inter transition-all duration-300 hover:text-primary">Testimonials</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-xs sm:text-sm font-inter transition-all duration-300 hover:text-primary">Blog</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white text-xs sm:text-sm font-inter transition-all duration-300 hover:text-primary">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-12 sm:col-span-6 lg:col-span-4">
+            <h3 class="pb-6 text-white text-sm sm:text-base font-bold font-inter">Follow Us</h3>
+            <div class="flex items-center rounded-lg overflow-hidden w-full">
+              <input type="email" placeholder="Your email address" class="flex-grow w-full focus:outline-none px-4 h-10 sm:h-11 bg-white font-inter placeholder:font-inter text-secondary text-xs sm:text-sm placeholder:text-xs sm:placeholder:text-sm placeholder:text-[#999]">
+              <button type="button" class="leading-10 sm:leading-[44px] px-[30px] bg-primary text-white font-inter text-sm sm:text-base font-bold flex-shrink-0">Join</button>
+            </div>
+
+            <div class="flex items-center gap-7 mt-6 w-full">
+              <div class="w-1/2">
+                <h4 class="pb-6 text-white font-inter text-sm sm:text-base font-bold">Your email address</h4>
+                <p class="flex items-center gap-[6px] sm:gap-2 text-white/70 text-sm font-inter">
+                  <img src="src/images/icons/email.svg" alt="Email">
+                  yourname@mail.com
+                </p>
+              </div>
+              <div class="w-1/2">
+                <h4 class="pb-6 text-white font-inter text-sm sm:text-base font-bold">Call us</h4>
+                <p class="flex items-center gap-[6px] sm:gap-2 text-white/70 text-sm font-inter">
+                  <img src="src/images/icons/phone.svg" alt="Phone">
+                  786393098
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer-top end -->
+
+    <!-- footer-bottom start -->
+    <section class="footer-bottom border-t border-[#E6F6FF]/20 py-6">
+      <div class="container">
+        <p class="text-center text-[#A2A9B0] text-[10px] sm:text-xs font-inter">Copyright © 2023 <span class="font-bold text-white">Techvers</span>. All rights reserved.</p>
+      </div>
+    </section>
+    <!-- footer-bottom end -->
+  </footer>
+  <!-- footer end -->
+
+  <script src="../src/js/jquery-3.6.1.min.js"></script>
+  <script src="../src/js/swiper-bundle.min.js"></script>
+  <script src="../src/js/jquery.waypoints.min.js"></script>
+  <script src="../src/js/jquery.counterup.min.js"></script>
+  <script src="../src/js/script.js"></script>
+</body>
+</html>
