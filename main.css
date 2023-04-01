@@ -36,7 +36,15 @@
   }
 }
 
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
+  width: 0;
+  scrollbar-width: none;
+}
 
+.scrollbar-hide{
+  scrollbar-width: none;
+}
 
 /*--------------------------------------------
 header
@@ -105,20 +113,20 @@ banner
 /*--------------------------------------------
 about
 ----------------------------------------------*/
-.about{
+/* .about{
   background: url('../src/images/about-bg.png') no-repeat bottom;
-}
-.spin-animation{
-  transform-origin: 245px 262px;
-  animation: rot 10s infinite linear;
-}
+} */
 
-@keyframes rot {
-  to{
+@keyframes rotate {
+  100%{
     transform: rotate(360deg);
   }
 }
 
+.spin-animation{
+  transform-origin: center;
+  animation: rotate 12s linear infinite;
+}
 
 /*--------------------------------------------
 service
@@ -194,12 +202,24 @@ contact
   }
 }
 
+@keyframes rotate-rev {
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
 .contact .address{
   background: url('../src/images/map.png') no-repeat center;
 }
 
 .rotate-animation{
-  animation: rotate 4s linear infinite;
+  transform-origin: center;
+  animation: rotate 8s linear infinite;
+}
+
+.rotate-reverse{
+  transform-origin: center;
+  animation: rotate-rev 8s linear infinite;
 }
 
 
@@ -220,4 +240,43 @@ service-page
 
 .all-service .tabs-nav .active a{
   @apply font-semibold md:font-bold text-white bg-primary;
+}
+
+
+/*--------------------------------------------
+testimonial-page
+----------------------------------------------*/
+.testimonial-banner{
+  background: url('../src/images/testimonial-bg.png') no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width:639px) {
+  .testimonial-banner{
+    background: url('../src/images/testimonial-bg-sm.png') no-repeat center;
+    background-size: cover;
+  }
+}
+
+/*--------------------------------------------
+blog-page
+----------------------------------------------*/
+.blog-banner{
+  background: url('../src/images/blog-bg.png') no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width:639px) {
+  .blog-banner{
+    background: url('../src/images/blog-bg-sm.png') no-repeat center;
+    background-size: cover;
+  }
+}
+
+.blog .blog-filter-btns .active button span{
+  @apply bg-primary text-white;
+}
+
+.blog .pagination .active{
+  @apply bg-primary text-white font-bold;
 }

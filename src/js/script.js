@@ -69,4 +69,17 @@ $(function(){
     return false;
   });
 
+  /*======================= latest blog tab filtering ========================*/
+
+  $('.blog-filter-btns button').on('click', function (event) {
+    $(this).parent().siblings('.active').removeClass('active');
+    $(this).parent().addClass('active');
+  });
+
+  var gridContainer = document.querySelector('#blog-grid-container');
+
+  if(gridContainer){
+    var mixer = mixitup(gridContainer);
+  }
+
 });
