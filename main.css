@@ -259,7 +259,7 @@ testimonial-page
 }
 
 /*--------------------------------------------
-blog-page
+blog page
 ----------------------------------------------*/
 .blog-banner{
   background: url('../src/images/blog-bg.png') no-repeat center;
@@ -279,4 +279,33 @@ blog-page
 
 .blog .pagination .active{
   @apply bg-primary text-white font-bold;
+}
+
+/*--------------------------------------------
+blog-details page
+----------------------------------------------*/
+.blog-details .reply-arrow::before{
+  content: '';
+  height: calc(100% - 20px);
+  width: 28px;
+  border-left: 1px solid #9ADDFE;
+  border-bottom: 1px solid #9ADDFE;
+  border-bottom-left-radius: 16px;
+  position: absolute;
+  top: 80px;
+  left: 32px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1023px) {
+  .blog-details .reply-arrow::before{
+    height: 100%;
+    width: 9px;
+    top: 46px;
+    left: 20px;
+  }
+}
+
+.blog-details .blog-filter-btns .active span{
+  @apply bg-primary text-white;
 }
