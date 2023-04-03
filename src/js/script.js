@@ -5,15 +5,23 @@ $(function(){
   $('.mobile-menu-toggle').on('click', function(){
     if(window.innerWidth < 768){
       $('.mobile-menu').slideToggle();
+      $('.overlay').toggleClass('hidden');
     }
     else{
       $('.mobile-menu').removeClass('hidden');
+      $('.overlay').addClass('hidden');
     }
+  });
+
+  $('.overlay').on('click', function(){
+    $(this).addClass('hidden');
+    $('.mobile-menu').slideUp();
   })
 
   $(window).on('resize', function(){
     if(window.innerWidth >= 768){
       $('.mobile-menu').removeClass('hidden').removeAttr("style").show();
+      $('.overlay').addClass('hidden');
     }
     else{
       $('.mobile-menu').addClass('hidden');
