@@ -309,3 +309,39 @@ blog-details page
 .blog-details .blog-filter-btns .active span{
   @apply bg-primary text-white;
 }
+
+/*--------------------------------------------
+not-found page
+----------------------------------------------*/
+.back-to-home::after,
+.back-to-home::before{
+  content: '';
+  top: -4px;
+  right: -35px;
+  border-radius: 50%;
+  transition: all linear 0.8s;
+  @apply absolute bg-primary;
+}
+
+.back-to-home::after{
+  height: 100px;
+  width: 100px;
+}
+
+.back-to-home::before{
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+}
+
+.back-to-home:hover::after{
+  height: 150px;
+  width: 150px;
+}
+
+.back-to-home:hover::before{
+  height: 500px;
+  width: 500px;
+  border-radius: 0;
+  opacity: 1;
+}

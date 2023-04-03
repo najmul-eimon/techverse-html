@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Techverse | Blog</title>
+  <title>Techverse | Contact</title>
   <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="../src/css/swiper-bundle.min.css">
@@ -36,7 +36,7 @@
                 <a href="testimonial.html" class="nav-link w-full md:w-auto border-b border-black/20 md:border-0 font-bold inline-block text-primary-text py-2 px-3 lg:px-5 text-base capitalize transition-all duration-300">Testimonial</a>
               </li>
               <li>
-                <a href="blog.html" class="nav-link w-full md:w-auto border-b border-black/20 md:border-0 font-bold inline-block text-primary-text py-2 px-3 lg:px-5 text-base capitalize transition-all duration-300 active">Blog</a>
+                <a href="blog.html" class="nav-link w-full md:w-auto border-b border-black/20 md:border-0 font-bold inline-block text-primary-text py-2 px-3 lg:px-5 text-base capitalize transition-all duration-300">Blog</a>
               </li>
               <li class="md:hidden">
                 <a href="contact.html" class="nav-link w-full md:w-auto border-b border-black/20 md:border-0 font-bold inline-block text-primary-text py-2 px-3 lg:px-5 text-base capitalize transition-all duration-300">Contact</a>
@@ -54,11 +54,11 @@
   <!-- main start -->
   <main>
     <!-- banner start -->
-    <section class="blog-banner mt-12 md:mt-[77px] lg:mt-[81px]">
-      <div class="pt-[75px] pb-[76px] md:py-[87px]">
+    <section class="service-banner mt-12 md:mt-[77px] lg:mt-[81px]">
+      <div class="pt-8 md:pt-[70px] pb-[120px] md:pb-[105px]">
         <div class="container">
-          <div class="max-w-[523px] mx-auto text-center">
-            <h1 class="text-2xl md:text-4xl xl:text-5xl xl:leading-[72px] font-bold text-primary-text pb-2">Blog</h1>
+          <div class="max-w-[523px]">
+            <h1 class="text-2xl md:text-4xl xl:text-5xl xl:leading-[72px] font-bold text-primary-text pb-2">Contacts</h1>
             <p class="text-primary-text font-inter text-xs md:text-base">Excepteur sint occaecat cupidatat non proident, sunt in coulpa qui official modeserunt mollit anim id est laborum 20 years experience.</p>
           </div>
         </div>
@@ -66,325 +66,44 @@
     </section>
     <!-- banner end -->
 
-    <!-- blog start -->
-    <section class="blog pt-20">
+    <!-- address start -->
+    <section class="address pt-8 md:pt-[160px] pb-16 md:pb-20">
       <div class="container">
-        <!-- section title -->
-        <div class="text-center pb-8">
-          <span class="text-xs md:text-base font-semibold md:font-bold font-inter text-primary block">Latest Blog</span>
-          <h2 class="text-primary-text pt-2 font-bold text-lg md:text-2xl lg:text-[32px]">Articles on Tech and Development</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- card 1 -->
+          <div class="p-8 bg-white rounded-[22px] shadow-[0px_0px_16px_rgba(198,198,198,0.24)]">
+            <span class="h-12 w-12 flex items-center justify-center">
+              <img src="../src/images/icons/message.svg" alt="message">
+            </span>
+            <h4 class="py-4 text-sm md:text-base font-bold text-primary-text font-inter">Email</h4>
+            <p class="pb-4 text-xs lg:text-sm xl:text-base font-inter text-primary-text">Support@prosit.com</p>
+            <a href="mailto:support@prosit.com" class="inline-block w-40 text-center py-2 rounded-md border border-primary text-primary font-inter font-bold text-base transition-all duration-300 hover:bg-primary hover:text-white">Contact</a>
+          </div>
+
+          <!-- card 2 -->
+          <div class="p-8 bg-white rounded-[22px] shadow-[0px_0px_16px_rgba(198,198,198,0.24)]">
+            <span class="h-12 w-12 flex items-center justify-center">
+              <img src="../src/images/icons/calling.svg" alt="calling">
+            </span>
+            <h4 class="py-4 text-sm md:text-base font-bold text-primary-text font-inter">Phone</h4>
+            <p class="pb-4 text-xs lg:text-sm xl:text-base font-inter text-primary-text">Office : +61 00-33489</p>
+            <a href="tel:+61 00-33489" class="inline-block w-40 text-center py-2 rounded-md border border-primary text-primary font-inter font-bold text-base transition-all duration-300 hover:bg-primary hover:text-white">Call</a>
+          </div>
+
+          <!-- card 3 -->
+          <div class="p-8 bg-white rounded-[22px] shadow-[0px_0px_16px_rgba(198,198,198,0.24)]">
+            <span class="h-12 w-12 flex items-center justify-center">
+              <img src="../src/images/icons/pin_alt_fill.svg" alt="map pin">
+            </span>
+            <h4 class="py-4 text-sm md:text-base font-bold text-primary-text font-inter">Address</h4>
+            <p class="pb-4 text-xs lg:text-sm xl:text-base font-inter text-primary-text">4517 Washington Ave. Manchester</p>
+            <a href="#!" class="inline-block w-40 text-center py-2 rounded-md border border-primary text-primary font-inter font-bold text-base transition-all duration-300 hover:bg-primary hover:text-white">Location</a>
+          </div>
+
         </div>
-
-        <ul class="flex items-center gap-4 my-10 overflow-x-auto w-full scrollbar-hide blog-filter-btns">
-          <li class="active">
-            <button type="button" data-filter="all" class="whitespace-nowrap rounded-lg border border-[#D2D1E0] px-4 py-2 flex items-center gap-3 text-primary-text text-xs md:text-base font-inter">
-              All
-            </button>
-          </li>
-          <li>
-            <button type="button" data-filter=".digital" class="whitespace-nowrap rounded-lg border border-[#D2D1E0] py-1 md:py-[6px] pr-3 pl-4 md:pr-[14px] flex items-center gap-3 text-primary-text text-xs md:text-base font-inter">
-              Digital Marketing 
-              <span class="flex items-center justify-center h-[30px] w-[30px] rounded bg-[#FCE3E4] font-medium text-sm md:text-base">16</span>
-            </button>
-          </li>
-          <li>
-            <button type="button" data-filter=".business" class="whitespace-nowrap rounded-lg border border-[#D2D1E0] py-1 md:py-[6px] pr-3 pl-4 md:pr-[14px] flex items-center gap-3 text-primary-text text-xs md:text-base font-inter">
-              Business Marketing
-              <span class="flex items-center justify-center h-[30px] w-[30px] rounded bg-[#FCE3E4] font-medium text-sm md:text-base">16</span>
-            </button>
-          </li>
-          <li>
-            <button type="button" data-filter=".cloud" class="whitespace-nowrap rounded-lg border border-[#D2D1E0] py-1 md:py-[6px] pr-3 pl-4 md:pr-[14px] flex items-center gap-3 text-primary-text text-xs md:text-base font-inter">
-              Cloud Service
-              <span class="flex items-center justify-center h-[30px] w-[30px] rounded bg-[#FCE3E4] font-medium text-sm md:text-base">8</span>
-            </button>
-          </li>
-          <li>
-            <button type="button" data-filter=".web" class="whitespace-nowrap rounded-lg border border-[#D2D1E0] py-1 md:py-[6px] pr-3 pl-4 md:pr-[14px] flex items-center gap-3 text-primary-text text-xs md:text-base font-inter">
-              Web Development
-              <span class="flex items-center justify-center h-[30px] w-[30px] rounded bg-[#FCE3E4] font-medium text-sm md:text-base">16</span>
-            </button>
-          </li>
-          <li>
-            <button type="button" data-filter=".data" class="whitespace-nowrap rounded-lg border border-[#D2D1E0] py-1 md:py-[6px] pr-3 pl-4 md:pr-[14px] flex items-center gap-3 text-primary-text text-xs md:text-base font-inter">
-              Data Security
-              <span class="flex items-center justify-center h-[30px] w-[30px] rounded bg-[#FCE3E4] font-medium text-sm md:text-base">16</span>
-            </button>
-          </li>
-        </ul>
-
-        <div id="blog-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 md:gap-y-10">
-          <!-- item 1 -->
-          <div class="mix digital data">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">The different types of data backups are more important</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog4.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-
-          <!-- item 2 -->
-          <div class="mix business">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">The unseen of spending three years at Pixel grade</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog5.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-
-          <!-- item 3 -->
-          <div class="mix cloud data">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">Starting your traveling blog with Vasco official group</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog6.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-
-          <!-- item 4 -->
-          <div class="mix web digital">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">The different types of data backups are more important</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog7.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-
-          <!-- item 5 -->
-          <div class="mix data business">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">The unseen of spending three years at Pixel grade</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog8.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-
-          <!-- item 6 -->
-          <div class="mix digital web">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">Starting your traveling blog with Vasco official group</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog9.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-
-          <!-- item 7 -->
-          <div class="mix business">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">The different types of data backups are more important</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog10.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-
-          <!-- item 8 -->
-          <div class="mix cloud">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">The unseen of spending three years at Pixel grade</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog1.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-
-          <!-- item 9 -->
-          <div class="mix web cloud">
-            <div class="px-4 py-6 bg-white border border-[#D2D1E0] rounded-lg transition-all duration-300 hover:shadow-[4px_20px_23px_rgba(71,71,71,0.13)]">
-              <h3 class="text-base font-bold text-primary-text">Starting your traveling blog with Vasco official group</h3>
-              <div class="rounded overflow-hidden my-5">
-                <img src="../src/images/blog/blog12.png" class="w-full" alt="Blog">
-              </div>
-              <p class="text-sm font-inter text-secondary-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Velit officia consequat duis enim velit mollit.</p>
-              
-              <ul class="flex items-center gap-3 my-5">
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/calendar.svg" alt="calendar">
-                  <p class="text-sm font-inter text-primary-text font-bold">15 <span class="font-medium text-secondary-text">Jan,2023</span></p>
-                </li>
-                <li class="flex items-center gap-2">
-                  <img src="../src/images/icons/user.svg" alt="user">
-                  <p class="text-sm font-inter text-primary-text font-bold">Admin</p>
-                </li>
-              </ul>
-
-              <a href="blog-details.html" class="flex items-center gap-[10px] py-3 font-inter text-base font-medium text-primary">
-                Read more
-                <img src="../src/images/icons/arrow-red.svg" alt="Arrow">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- pagination -->
-        <ul class="pagination flex items-center justify-end gap-4 mt-7 w-full">
-          <li>
-            <a href="#!" class="h-6 md:h-10 w-6 md:w-10 flex items-center justify-center rounded-[5px]"><i class="ph ph-caret-left text-base md:text-xl text-primary-text"></i></a>
-          </li>
-          <li>
-            <a href="#!" class="h-6 md:h-10 w-6 md:w-10 flex items-center justify-center rounded-[5px] font-inter text-secondary-text text-xs md:text-sm active">1</a>
-          </li>
-          <li>
-            <a href="#!" class="h-6 md:h-10 w-6 md:w-10 flex items-center justify-center rounded-[5px] font-inter text-secondary-text text-xs md:text-sm">2</a>
-          </li>
-          <li>
-            <a href="#!" class="h-6 md:h-10 w-6 md:w-10 flex items-center justify-center rounded-[5px] font-inter text-secondary-text text-xs md:text-sm">3</a>
-          </li>
-          <li>
-            <a href="#!" class="h-6 md:h-10 w-6 md:w-10 flex items-center justify-center rounded-[5px] font-inter text-secondary-text text-xs md:text-sm">4</a>
-          </li>
-          <li>
-            <a href="#!" class="h-6 md:h-10 w-6 md:w-10 flex items-center justify-center rounded-[5px] font-inter text-secondary-text text-xs md:text-sm">5</a>
-          </li>
-          <li>
-            <a href="#!" class="h-6 md:h-10 w-6 md:w-10 flex items-center justify-center rounded-[5px]"><i class="ph ph-caret-right text-base md:text-xl text-primary-text"></i></a>
-          </li>
-        </ul>
       </div>
     </section>
-    <!-- blog end -->
+    <!-- address end -->
 
     <!-- contact-us start -->
     <section class="contact pt-16 pb-8 md:py-20">
@@ -426,7 +145,7 @@
                 <path class="rotate-reverse" d="M34.7901 210.812C34.7901 182.219 41.768 154.058 55.1182 128.773C68.4684 103.488 87.7875 81.8429 111.399 65.7162C135.01 49.5896 162.2 39.4687 190.61 36.232C219.019 32.9953 247.789 36.7405 274.423 47.1426" stroke="#F8444F" stroke-width="1.5877"/>
                 <circle cx="210.5" cy="210.813" r="209.5" stroke="#D6F0FD" stroke-width="1.5877"/>
                 <path class="rotate-animation" d="M374.431 341.26C357.301 362.788 336.098 380.731 312.032 394.064C287.967 407.398 261.512 415.861 234.176 418.97C206.84 422.079 179.16 419.774 152.715 412.185C126.271 404.597 101.579 391.874 80.0516 374.743C58.5238 357.612 40.581 336.409 27.2476 312.344C13.9142 288.279 5.45129 261.823 2.34213 234.488C-0.76703 207.152 1.53842 179.472 9.12685 153.027C16.7153 126.582 29.4381 101.891 46.5688 80.3633" stroke="#012C3D" stroke-width="1.5877"/>
-              </svg>                
+              </svg>               
             </div>
           </div>
 

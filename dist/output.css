@@ -819,6 +819,10 @@ video {
   height: 422px;
 }
 
+.h-\[68px\]{
+  height: 68px;
+}
+
 .h-fit{
   height: -moz-fit-content;
   height: fit-content;
@@ -828,12 +832,8 @@ video {
   height: 100%;
 }
 
-.h-\[74px\]{
-  height: 74px;
-}
-
-.h-\[68px\]{
-  height: 68px;
+.h-screen{
+  height: 100vh;
 }
 
 .w-1\/2{
@@ -852,6 +852,10 @@ video {
   width: 4rem;
 }
 
+.w-40{
+  width: 10rem;
+}
+
 .w-5{
   width: 1.25rem;
 }
@@ -868,6 +872,10 @@ video {
   width: 2.25rem;
 }
 
+.w-\[114px\]{
+  width: 114px;
+}
+
 .w-\[18px\]{
   width: 18px;
 }
@@ -878,6 +886,10 @@ video {
 
 .w-\[30px\]{
   width: 30px;
+}
+
+.w-\[68px\]{
+  width: 68px;
 }
 
 .w-\[calc\(100\%-48px\)\]{
@@ -891,22 +903,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-20{
-  width: 5rem;
-}
-
-.w-\[146px\]{
-  width: 146px;
-}
-
-.w-\[68px\]{
-  width: 68px;
-}
-
-.w-\[114px\]{
-  width: 114px;
 }
 
 .max-w-\[465px\]{
@@ -1042,16 +1038,16 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-6 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .divide-y > :not([hidden]) ~ :not([hidden]){
@@ -1095,6 +1091,10 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
 .rounded-\[22px\]{
   border-radius: 22px;
 }
@@ -1111,12 +1111,12 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-xl{
-  border-radius: 0.75rem;
+.rounded-md{
+  border-radius: 0.375rem;
 }
 
-.rounded-3xl{
-  border-radius: 1.5rem;
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .border{
@@ -1190,6 +1190,11 @@ video {
   background-color: rgb(1 28 39 / 0.1);
 }
 
+.bg-\[\#7A1403\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(122 20 3 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#F0F0F1\]{
   --tw-bg-opacity: 1;
   background-color: rgb(240 240 241 / var(--tw-bg-opacity));
@@ -1258,9 +1263,23 @@ video {
   padding: 1.5rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-20{
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .px-3{
@@ -1363,9 +1382,8 @@ video {
   padding-bottom: 9px;
 }
 
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.pb-12{
+  padding-bottom: 3rem;
 }
 
 .pb-16{
@@ -1468,10 +1486,6 @@ video {
   padding-top: 75px;
 }
 
-.pb-3{
-  padding-bottom: 0.75rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1546,6 +1560,10 @@ video {
   font-weight: 600;
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
+
 .capitalize{
   text-transform: capitalize;
 }
@@ -1568,6 +1586,10 @@ video {
 
 .leading-\[20px\]{
   line-height: 20px;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
 }
 
 .text-\[\#A2A9B0\]{
@@ -2065,6 +2087,45 @@ blog-details page
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+/*--------------------------------------------
+not-found page
+----------------------------------------------*/
+
+.back-to-home::after,
+.back-to-home::before{
+  content: '';
+  top: -4px;
+  right: -35px;
+  border-radius: 50%;
+  transition: all linear 0.8s;
+  position: absolute;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 68 79 / var(--tw-bg-opacity));
+}
+
+.back-to-home::after{
+  height: 100px;
+  width: 100px;
+}
+
+.back-to-home::before{
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+}
+
+.back-to-home:hover::after{
+  height: 150px;
+  width: 150px;
+}
+
+.back-to-home:hover::before{
+  height: 500px;
+  width: 500px;
+  border-radius: 0;
+  opacity: 1;
+}
+
 .placeholder\:font-inter::-moz-placeholder{
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -2160,24 +2221,25 @@ blog-details page
   border-color: rgb(248 68 79 / 0.4);
 }
 
+.hover\:bg-primary:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 68 79 / var(--tw-bg-opacity));
+}
+
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(248 68 79 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-\[4px_20px_23px_rgba\(71\2c 71\2c 71\2c 0\.13\)\]:hover{
   --tw-shadow: 4px 20px 23px rgba(71,71,71,0.13);
   --tw-shadow-colored: 4px 20px 23px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.focus\:border-primary:focus{
-  --tw-border-opacity: 1;
-  border-color: rgb(248 68 79 / var(--tw-border-opacity));
-}
-
-.focus\:border-primary\/20:focus{
-  border-color: rgb(248 68 79 / 0.2);
 }
 
 .focus\:border-primary\/40:focus{
@@ -2466,6 +2528,11 @@ blog-details page
     padding: 1.5rem;
   }
 
+  .md\:px-24{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -2479,11 +2546,6 @@ blog-details page
   .md\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .md\:py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 
   .md\:py-4{
@@ -2506,6 +2568,11 @@ blog-details page
     padding-bottom: 2rem;
   }
 
+  .md\:py-\[10px\]{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .md\:py-\[22px\]{
     padding-top: 22px;
     padding-bottom: 22px;
@@ -2524,6 +2591,11 @@ blog-details page
   .md\:py-\[95px\]{
     padding-top: 95px;
     padding-bottom: 95px;
+  }
+
+  .md\:py-\[9px\]{
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 
   .md\:pb-10{
@@ -2582,6 +2654,10 @@ blog-details page
     padding-top: 160px;
   }
 
+  .md\:pt-\[70px\]{
+    padding-top: 70px;
+  }
+
   .md\:pt-\[87px\]{
     padding-top: 87px;
   }
@@ -2603,6 +2679,11 @@ blog-details page
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-sm{
@@ -2711,10 +2792,6 @@ blog-details page
     width: 45%;
   }
 
-  .lg\:w-\[146px\]{
-    width: 146px;
-  }
-
   .lg\:max-w-\[356px\]{
     max-width: 356px;
   }
@@ -2784,10 +2861,6 @@ blog-details page
 
   .lg\:p-4{
     padding: 1rem;
-  }
-
-  .lg\:p-6{
-    padding: 1.5rem;
   }
 
   .lg\:px-0{
@@ -2860,6 +2933,10 @@ blog-details page
 
   .lg\:pt-16{
     padding-top: 4rem;
+  }
+
+  .lg\:pt-20{
+    padding-top: 5rem;
   }
 
   .lg\:text-left{
