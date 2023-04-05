@@ -1,6 +1,11 @@
 $(function(){
   "use strick";
 
+  /*======================== preloader ===========================*/
+  $(document).ready(function() {
+    $("#preloader").fadeOut(500); 
+  });
+
   /*======================== mobile menu toggle ===========================*/
   $('.mobile-menu-toggle').on('click', function(){
     if(window.innerWidth < 768){
@@ -31,7 +36,7 @@ $(function(){
   /*======================= project slider ========================*/
   var projectSwiper = new Swiper(".project-slider", {
     spaceBetween: 24,
-    grabCursor: false,
+    grabCursor: true,
     slidesPerView: 1,
     loop: true,
     autoplay: true,

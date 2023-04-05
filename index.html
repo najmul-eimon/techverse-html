@@ -13,9 +13,24 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   
   <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="src/css/preloader.css">
   <link rel="stylesheet" href="dist/output.css">
 </head>
 <body>
+  <!-- preloader start -->
+  <div class="cssload-preloader" id="preloader">
+    <div class="cssload-preloader-box">
+      <div>L</div>
+      <div>o</div>
+      <div>a</div>
+      <div>d</div>
+      <div>i</div>
+      <div>n</div>
+      <div>g</div>
+    </div>
+  </div>
+  <!-- preloader end -->
+
   <!-- header start -->
   <header class="header fixed top-0 left-0 w-full z-40 bg-[#FAFAFC] shadow-[0px_0px_22px_rgba(119,119,119,0.19)] box-border md:shadow-none md:border-b md:border-black/10 transition-all duration-300">
     <div class="container">
@@ -648,7 +663,7 @@
 
               <div class="mb-6">
                 <label for="privacy" class="text-xs lg:text-base font-inter text-primary-text cursor-pointer flex items-center gap-3">
-                  <input type="checkbox" id="privacy" class="accent-primary h-5 w-5">
+                  <input type="checkbox" id="privacy" class="accent-primary h-5 w-5 cursor-pointer">
                   <p>I agree to <a href="#!" class="font-bold">Privacy policy</a> and <a href="#!" class="font-bold">Terms of use</a></p>
                 </label>
               </div>

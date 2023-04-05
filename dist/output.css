@@ -847,6 +847,10 @@ video {
   height: 100vh;
 }
 
+.min-h-\[calc\(100vh-81px\)\]{
+  min-height: calc(100vh - 81px);
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1747,23 +1751,12 @@ video {
   font-style: normal;
 }
 
-/**
- * Fix fonts that render as bold in Firefox
- *
- * Put this near the top of your style.css
- * Before any overriding styles
- */
-
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-weight: 400;
 }
-
-/**
- * Firefox specific rule
- */
 
 @-moz-document url-prefix() {
   body{
@@ -1908,10 +1901,6 @@ service
 working-process
 ----------------------------------------------*/
 
-.progress-svg {
-  animation: animateDash 10s ease-in-out forwards infinite;
-}
-
 @keyframes animateDash {
   from {
     width: 0%;
@@ -1920,6 +1909,10 @@ working-process
   to{
     width: 100%;
   }
+}
+
+.progress-svg {
+  animation: animateDash 10s ease-in-out forwards infinite;
 }
 
 /*--------------------------------------------
@@ -2399,6 +2392,10 @@ not-found page
 
   .md\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .md\:mt-20{
+    margin-top: 5rem;
   }
 
   .md\:mt-8{
