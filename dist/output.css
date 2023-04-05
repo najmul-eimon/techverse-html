@@ -1501,6 +1501,10 @@ video {
   padding-top: 75px;
 }
 
+.pl-\[14px\]{
+  padding-left: 14px;
+}
+
 .text-center{
   text-align: center;
 }
