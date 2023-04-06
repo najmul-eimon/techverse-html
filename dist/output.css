@@ -1457,6 +1457,10 @@ video {
   padding-left: 1.5rem;
 }
 
+.pl-\[14px\]{
+  padding-left: 14px;
+}
+
 .pr-3{
   padding-right: 0.75rem;
 }
@@ -1499,10 +1503,6 @@ video {
 
 .pt-\[75px\]{
   padding-top: 75px;
-}
-
-.pl-\[14px\]{
-  padding-left: 14px;
 }
 
 .text-center{
