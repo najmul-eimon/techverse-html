@@ -101,10 +101,6 @@ banner
 /*--------------------------------------------
 about
 ----------------------------------------------*/
-/* .about{
-  background: url('../src/images/about-bg.png') no-repeat bottom;
-} */
-
 @keyframes rotate {
   100%{
     transform: rotate(360deg);
@@ -125,6 +121,9 @@ service
 
 .service .single-item:hover .hover-color {
   @apply fill-primary;
+}
+.service .single-item:hover .hover-odd {
+  @apply fill-primary-text;
 }
 
 .service .single-item:hover .more-btn svg path{
