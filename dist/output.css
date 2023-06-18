@@ -652,6 +652,10 @@ video {
   grid-column: span 6 / span 6;
 }
 
+.m-10{
+  margin: 2.5rem;
+}
+
 .mx-6{
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -740,6 +744,10 @@ video {
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .box-border{
@@ -849,6 +857,10 @@ video {
 
 .min-h-\[calc\(100vh-81px\)\]{
   min-height: calc(100vh - 81px);
+}
+
+.min-h-\[40px\]{
+  min-height: 40px;
 }
 
 .w-1\/2{
@@ -2259,6 +2271,16 @@ not-found page
   outline-offset: 2px;
 }
 
+.group:hover .group-hover\:bg-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 68 79 / var(--tw-bg-opacity));
+}
+
+.group:hover .group-hover\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px){
   .sm\:col-span-2{
     grid-column: span 2 / span 2;
@@ -2287,6 +2309,10 @@ not-found page
   .sm\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .sm\:w-40{
+    width: 10rem;
   }
 
   .sm\:grid-cols-2{
